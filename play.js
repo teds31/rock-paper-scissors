@@ -48,4 +48,13 @@ const determineWinner = (userChoice, computerChoice ) => {
         }
       }
   };
-  
+
+  const playGame = () => {
+      let userChoice = getUserChoice('rock');
+      let computerChoice = getComputerChoice();
+      console.log('You threw: ' + userChoice);
+      console.log('The computer threw: ' + computerChoice);
+      console.log(determineWinner(userChoice, computerChoice));
+  }
+
+  playGame();
